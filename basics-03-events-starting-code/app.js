@@ -14,6 +14,10 @@ const app = Vue.createApp({
     },
     setName(input, lastName) {
       this.name = input.target.value + ' ' + lastName;
+    },
+    submitForm(form) {
+      form.preventDefault();
+      alert('Submitted');
     }
   }
 });
